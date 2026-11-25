@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventario | Natural Essence</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container header-inner">
+        <a class="brand" href="../index.html">
+            <span class="brand-mark">🧼</span>
+            <span>NATURAL ESSENCE<small>JABONES ARTESANALES</small></span>
+        </a>
+        <nav class="nav">
+            <a href="../index.html">Inicio</a>
+            <a href="administracion.html">Panel administrativo</a>
+            <a class="active" href="inventario.html">Inventario</a>
+        </nav>
+    </div>
+</header>
+
+<main class="container section">
+
+    <span class="eyebrow">Administración</span>
+    <h1>Control de inventario</h1>
+    <p>Consulta las existencias de los jabones.</p>
+
+    <div class="toolbar">
+        <a class="btn" href="productos.html">＋ Registrar producto</a>
+        <a class="btn btn-outline" href="administracion.html">
+            Volver al panel
+        </a>
+    </div>
+
+    <!-- Tabla de existencias -->
+    <div class="table-wrap">
+        <table>
+            <thead>
+                <tr>
+                    <th>Código</th>
+                    <th>Producto</th>
+                    <th>Categoría</th>
+                    <th>Existencias</th>
+                    <th>Estado</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>NE001</td>
+                    <td>Jabón de uva</td>
+                    <td>Cuidado facial</td>
+                    <td>35</td>
+                    <td><span class="status green">Disponible</span></td>
+                </tr>
+
+                <tr>
+                    <td>NE002</td>
+                    <td>Jabón de rosas</td>
+                    <td>Cuidado corporal</td>
+                    <td>8</td>
+                    <td><span class="status orange">Pocas unidades</span></td>
+                </tr>
+
+                <tr>
+                    <td>NE003</td>
+                    <td>Jabón de miel</td>
+                    <td>Cuidado diario</td>
+                    <td>22</td>
+                    <td><span class="status green">Disponible</span></td>
+                </tr>
+
+                <tr>
+                    <td>NE004</td>
+                    <td>Jabón de coco</td>
+                    <td>Cuidado corporal</td>
+                    <td>0</td>
+                    <td><span class="status">Agotado</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="notice">
+        Esta tabla es de demostración. Para actualizar existencias
+        necesitaremos conectar una base de datos.
+    </div>
+
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-inner">
+        <strong>NATURAL ESSENCE</strong>
+        <p>Control de inventario | © 2026</p>
+    </div>
+</footer>
+<link rel="stylesheet" href="../CSS/estilos.css">
+</body>
+</html>

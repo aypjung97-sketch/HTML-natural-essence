@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de productos | Natural Essence</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container header-inner">
+        <a class="brand" href="../index.html">
+            <span class="brand-mark">🧼</span>
+            <span>NATURAL ESSENCE<small>JABONES ARTESANALES</small></span>
+        </a>
+        <nav class="nav">
+            <a href="../index.html">Inicio</a>
+            <a href="administracion.html">Panel administrativo</a>
+            <a class="active" href="productos.html">Registrar producto</a>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+
+    <div class="form-layout">
+
+        <!-- Panel de presentación -->
+        <aside class="form-aside">
+            <div class="soap-illustration">
+                🧴
+                <span>NATURAL ESSENCE</span>
+            </div>
+            <h2>Nuevo producto</h2>
+            <p>
+                Registra la información básica de cada jabón
+                para el catálogo y el inventario.
+            </p>
+        </aside>
+
+        <!-- Formulario para registrar jabones -->
+        <section class="form-content">
+
+            <span class="eyebrow">Administración</span>
+            <h2>Registro de productos</h2>
+
+            <form action="inventario.html" method="get">
+
+                <div class="form-grid">
+
+                    <div class="field">
+                        <label for="codigo">Código del producto</label>
+                        <input type="text" id="codigo" name="codigo"
+                               placeholder="Ej. NE005" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="nombre">Nombre del jabón</label>
+                        <input type="text" id="nombre" name="nombre"
+                               placeholder="Ej. Jabón de lavanda" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="categoria">Categoría</label>
+                        <select id="categoria" name="categoria" required>
+                            <option value="">Selecciona una categoría</option>
+                            <option value="facial">Cuidado facial</option>
+                            <option value="corporal">Cuidado corporal</option>
+                            <option value="diario">Cuidado diario</option>
+                            <option value="regalos">Regalos</option>
+                        </select>
+                    </div>
+
+                    <div class="field">
+                        <label for="precio">Precio (COP)</label>
+                        <input type="number" id="precio" name="precio"
+                               min="0" placeholder="12000" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="cantidad">Cantidad inicial</label>
+                        <input type="number" id="cantidad" name="cantidad"
+                               min="0" placeholder="10" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="peso">Peso en gramos</label>
+                        <input type="number" id="peso" name="peso"
+                               min="1" placeholder="100">
+                    </div>
+
+                    <div class="field full">
+                        <label for="descripcion">Descripción</label>
+                        <textarea id="descripcion" name="descripcion"
+                                  placeholder="Describe el jabón y sus características..."></textarea>
+                    </div>
+
+                </div>
+
+                <div class="actions">
+                    <button class="btn" type="submit">
+                        Guardar producto
+                    </button>
+
+                    <a class="btn btn-outline" href="administracion.html">
+                        Cancelar
+                    </a>
+                </div>
+
+            </form>
+
+            <div class="notice">
+                Este formulario es demostrativo. Los datos no se guardan
+                todavía en el inventario.
+            </div>
+
+        </section>
+    </div>
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-inner">
+        <strong>NATURAL ESSENCE</strong>
+        <p>Registro de productos | © 2026</p>
+    </div>
+</footer>
+<link rel="stylesheet" href="../CSS/estilos.css">
+</body>
+</html>

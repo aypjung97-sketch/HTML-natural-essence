@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro | Natural Essence</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container header-inner">
+        <a class="brand" href="../index.html">
+            <span class="brand-mark">🧼</span>
+            <span>NATURAL ESSENCE<small>JABONES ARTESANALES</small></span>
+        </a>
+        <nav class="nav">
+            <a href="../index.html">Inicio</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a class="active" href="registro.html">Registrarse</a>
+            <a href="login.html">Ingresar</a>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+
+    <div class="form-layout">
+
+        <!-- Panel decorativo -->
+        <aside class="form-aside">
+            <div class="soap-illustration">
+                🧼
+                <span>NATURAL ESSENCE</span>
+            </div>
+            <h2>Un momento para ti</h2>
+            <p>Regístrate y descubre nuestro catálogo de jabones artesanales.</p>
+            <p>🌱 Inspiración natural</p>
+            <p>🐰 Cuidado consciente</p>
+            <p>🔒 Datos protegidos</p>
+        </aside>
+
+        <!-- Formulario de registro -->
+        <section class="form-content">
+            <span class="eyebrow">Bienvenida</span>
+            <h2>Crear una cuenta</h2>
+            <p>Completa tus datos para registrarte.</p>
+
+            <form action="login.html" method="get">
+
+                <div class="form-grid">
+
+                    <div class="field">
+                        <label for="nombre">Nombre completo</label>
+                        <input type="text" id="nombre" name="nombre"
+                               placeholder="Tu nombre" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" id="telefono" name="telefono"
+                               placeholder="Tu teléfono" required>
+                    </div>
+
+                    <div class="field full">
+                        <label for="correo">Correo electrónico</label>
+                        <input type="email" id="correo" name="correo"
+                               placeholder="nombre@correo.com" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="clave">Contraseña</label>
+                        <input type="password" id="clave" name="clave"
+                               minlength="6" placeholder="Mínimo 6 caracteres" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="confirmar">Confirmar contraseña</label>
+                        <input type="password" id="confirmar" name="confirmar"
+                               minlength="6" placeholder="Repite tu contraseña" required>
+                    </div>
+
+                </div>
+
+                <label class="checkline">
+                    <input type="checkbox" required>
+                    <span>Acepto los términos y la política de tratamiento de datos.</span>
+                </label>
+
+                <button class="btn" type="submit">Continuar</button>
+
+            </form>
+
+            <p class="form-note">
+                ¿Ya tienes una cuenta?
+                <a href="login.html" style="color:#AD456B">Inicia sesión</a>
+            </p>
+        </section>
+
+    </div>
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-inner">
+        <strong>NATURAL ESSENCE</strong>
+        <p>Jabones artesanales | © 2026</p>
+    </div>
+</footer>
+<link rel="stylesheet" href="../CSS/estilos.css">
+</body>
+</html>
