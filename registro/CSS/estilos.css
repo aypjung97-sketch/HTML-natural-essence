@@ -210,15 +210,13 @@ p {
 
 .soap-illustration {
     text-align: center;
-    font-size: 110px;
 }
 
-.soap-illustration span {
+.soap-illustration img {
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
     display: block;
-    font-size: 14px;
-    letter-spacing: 3px;
-    color: var(--rosa-profundo);
-    font-weight: 800;
 }
 
 /* TARJETAS Y CATÁLOGO */
